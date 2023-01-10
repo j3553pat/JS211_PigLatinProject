@@ -12,6 +12,16 @@ const rl = readline.createInterface({
 
 
 const pigLatin = (word) => {
+  const pigVowels = ['a', 'e', 'i', 'o', 'u']
+  const pigLatinWord = word.toLowerCase().trim()
+
+for (let w = 0;  w < pigLatinWord.length; w++) {
+  if(pigVowels == pigVowels){
+    return pigLatinWord + 'yay'
+  } 
+}
+
+  
 
   // Your code here
 
