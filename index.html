@@ -2,18 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <script src="index.js"></script>
   </head>
   <body>
     <h1>Hello World!</h1>
-    <hr/>
-    <div id="display-element"></div>
-    <form id="answerForm">
-      <textarea class="user-input" id="user-input" cols="30" rows="10"></textarea>
-      <!-- How do you get this input sent to the pigLatin() function? -->
-      <button type="submit">Oinkify</button>
-    </form>
-    <hr/>
+    <section>
+      <textarea id="user-input" type="text"  cols="20" rows="5"></textarea>
+      <br>
+      <button onclick="pigLatin()" id="final">Translate</button>
+      <div id="display-element"></div>
+    </section>
   </body>
+  <script src="main.js"></script>
 </html>
+
