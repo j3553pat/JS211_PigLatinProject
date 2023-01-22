@@ -1,25 +1,14 @@
-const userInput = document.getElementById("user-input")
-const output = document.getElementById("display-element")
-const translateWord = (event) => {
-    event.preventDefault()
-    // console.log(userInput.value)
-    const newWord = pigLatin(userInput.value)
-    output.innerText = newWord
-console.log(newWord)
+
+const userInput = () => {
+let input = document.getElementById('user-input').value
+let output = document.getElementById('display-element').innerHTML = input
+let translate= document.getElementById('final');
+translate.addEventListener('click', pigLatin)
 }
 
 
 
 
-
-
-// const userInput = () => {
-// let input = document.getElementById('user-input').value
-// let output = document.getElementById('display-element').innerHTML = input
-// }
-
-// let translate= document.getElementById('final');
-// translate.addEventListener('click', pigLatin)
 
 
 // let inputText = document.getElementById("user-input");
