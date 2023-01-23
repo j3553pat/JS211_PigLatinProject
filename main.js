@@ -1,13 +1,12 @@
 
+
+
+
 const userInput = () => {
 let input = document.getElementById('user-input').value
-let output = document.getElementById('display-element').innerHTML = input
-let translate= document.getElementById('final');
-translate.addEventListener('click', pigLatin)
-}
-
-
-
+let output = document.getElementById('display-element')
+return output.innerHTML = pigLatin(input)
+    }
 
 
 
@@ -19,14 +18,12 @@ translate.addEventListener('click', pigLatin)
 
 
 // const userInput = () => {
-//   console.log("hello")
 //   let input = document.getElementById('user-input')
 //   let text =""
-//   let i
-//   for(i = 0; i < input.length; i++) {
-//     text += input.elements[i].value
+//   for(let i = 0; i < input.length; i++) {
+//     text += input[i].value
 //   } 
-//   document.getElementById('display-element').innerHTML = text
+//   document.getElementById('display-element').innerHTML = pigLatin(text)
 // }
 
 const pigLatin = (word) => {
